@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 
+html {
+    scroll-behavior:smooth;
+}
+
 :root {
     --color-black: #262b2f;
     --color-blue: #007bfe;
@@ -22,6 +26,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .social-links {
@@ -59,8 +64,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-blue);
-    
+    color: var(--color-blue);   
 }
 
 
@@ -93,7 +97,7 @@ img:hover {
 .nav-bar-links, .techologies-list {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .techologies-list > li{
