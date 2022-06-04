@@ -1,3 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+:root {
+    --color-black: #262b2f;
+    --color-blue: #007bfe;
+    --max-height: 650px;
+}
+
 body {
     font-family: Helvetica;
+    text-align: center;
+    margin: 0;
+    font-family: 'Viga', sans-serif;
+    color: var(--color-black);
+}
+
+nav {
+    background: var(--color-black);
+    color: white;
+    min-height: 50px;
+    font-size: large;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header {
+    margin: 5% 0 5% 0;
+}
+
+header > img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none; /* no underline */
+}
+
+main {
+    margin: 0 10% 0 10%;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card > a > img {
+    max-height: var(--max-height);
+    object-fit:contain;
+    border-radius: 5px;
+}
+
+h2 {
+    background: var(--color-black);
+    color: white;
+    border-radius: 5px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(5, 26, 33, 0.5);
+    cursor: pointer;
+}
+
+.nav-bar-links, .techologies-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.techologies-list > li{
+    background: var(--color-blue);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
 }
