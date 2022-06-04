@@ -37,6 +37,10 @@ nav {
     margin: 0 5px 0 5px;
 }
 
+#about-section > h3 {
+    margin-top: -50px;
+}
+
 
 #about-section {
     margin: 5% 0 5% 0;
@@ -104,7 +108,8 @@ img:hover {
     background: var(--color-blue);
     color: white;
     border-radius: 5px;
-    padding: 2px 10px 2px 10px;
+    padding: 2px 5px 2px 5px;
+    min-width: 80px;
 }
 
 .overlay {
@@ -119,7 +124,8 @@ img:hover {
     transition: .5s ease;
     background-color: #008CBA;
   }
-  
+
+
   .project-card:hover .overlay {
     opacity: 1;
   }
@@ -127,7 +133,7 @@ img:hover {
   .text {
     color: white;
     font-size: 20px;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
