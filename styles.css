@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: Helvetica;
+    /* font-family: Helvetica; */
     text-align: center;
     margin: 0;
     font-family: 'Viga', sans-serif;
@@ -38,11 +38,11 @@ nav {
 }
 
 
-header {
+#about-section {
     margin: 5% 0 5% 0;
 }
 
-header > img {
+#about-section > img {
     max-width: 150px;
     border-radius: 50%;
 }
@@ -103,6 +103,6 @@ img:hover {
 .techologies-list > li{
     background: var(--color-blue);
     color: white;
-    padding: 5px;
     border-radius: 5px;
+    padding: 2px 10px 2px 10px;
 }
