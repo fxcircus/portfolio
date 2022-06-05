@@ -7,7 +7,9 @@ html {
 :root {
     --color-black: #262b2f;
     --color-blue: #008CBA;
+    --color-purple: #7e54ed;
     --max-height: 650px;
+    
 }
 
 body {
@@ -62,14 +64,13 @@ ul {
 
 a {
     color: white;
-    text-decoration: none; /* no underline */
+    text-decoration: none;
     transition: 0.1s;
 }
 
 a:hover {
     color: var(--color-blue);   
 }
-
 
 main {
     margin: 0 10% 0 10%;
@@ -110,25 +111,35 @@ h2 {
     min-width: 90px;
 }
 
-.overlay {
+.overlay-1 {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 80%;
+    height: 100%;
     width: 50%;
-    margin-left: 25%;
     opacity: 0;
     transition: .1s ease;
-    /* background-color: #008CBA; */
-  }
+}
+
+.overlay-2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    opacity: 0;
+    transition: .1s ease;
+}
 
 .project-container-1 {
     position: relative;
 }
 
-.project-container-1:hover .overlay {
+.project-container-1:hover .overlay-1, .project-container-1:hover .overlay-2 {
     opacity: 1;
     cursor: pointer;
 }
@@ -137,36 +148,38 @@ h2 {
     opacity: 0.5;
 }
 
-.text-1 {
-    font-size: 40px;
+.text-1{
+    font-size: 100px;
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    background: var(--color-blue);
+    background-color: var(--color-purple);
     color: white;
     border-radius: 5px;
-    padding: 2px 5px 2px 5px;
-    min-width: 90px;
+    padding: 25% 35% 25% 35%;
 }
 
 .text-2 {
-    font-size: 40px;
+    font-size: 100px;
     position: absolute;
     top: 50%;
-    right: 25%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    background: var(--color-blue);
+    background: var(--color-purple);
     color: white;
     border-radius: 5px;
-    padding: 2px 5px 2px 5px;
-    min-width: 90px;
+    padding: 25%;
+}
+
+.text-1:hover, .text-2:hover {
+    background: var(--color-blue);
 }
 
 .project-links {
@@ -186,5 +199,9 @@ h2 {
         padding: 2px 5px 2px 5px;
         font-size: x-small;
         min-width: 40px;
+    }
+
+    .text-1, .text-2 {
+        font-size: 30px;
     }
 }
