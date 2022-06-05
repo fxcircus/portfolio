@@ -172,3 +172,19 @@ h2 {
 .project-links {
     display: flex;
 }
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .project-image {
+        max-width: 300px;
+    }
+
+    .techologies-list > li {
+        padding: 2px 5px 2px 5px;
+        font-size: x-small;
+        min-width: 40px;
+    }
+}
