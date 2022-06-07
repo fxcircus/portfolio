@@ -68,6 +68,12 @@ a {
     transition: 0.1s;
 }
 
+.cv-link a {
+    color: var(--color-black);
+    text-decoration: none;
+    transition: 0.1s;
+}
+
 a:hover {
     color: var(--color-blue);   
 }
