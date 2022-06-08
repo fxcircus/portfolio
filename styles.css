@@ -100,9 +100,11 @@ h2 {
     border-radius: 5px;
 }
 
-/* img:hover {
-    box-shadow: 0 0 2px 1px rgba(5, 26, 33, 0.5);
-} */
+hr {
+    margin: 10px 0 10px 0;
+    border-top: 3px dotted var(--color-black);
+    border-radius: 5px;
+}
 
 .nav-bar-links, .techologies-list {
     display: flex;
@@ -191,6 +193,11 @@ h2 {
 
 .project-links {
     display: flex;
+}
+
+.project-nav-links {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 footer {
