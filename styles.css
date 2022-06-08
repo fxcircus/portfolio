@@ -200,6 +200,10 @@ hr {
     justify-content: space-evenly;
 }
 
+.page-numbers {
+    color: white;
+}
+
 footer {
     color: var(--color-gray);
     font-size: small;
