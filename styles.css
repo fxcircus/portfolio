@@ -81,7 +81,12 @@ a {
 .black-links a {
     color: var(--color-black);
     text-decoration: none;
+    font-size: large;
     transition: 0.1s;
+}
+
+.black-links {
+    margin-bottom: 150px;
 }
 
 a:hover {
@@ -221,7 +226,7 @@ footer {
     margin-top: 10px;
 }
 
-#about-section h1, h3, h4{
+#about-section h1, h3, p{
     animation-name: fade-in;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
