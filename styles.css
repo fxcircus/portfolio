@@ -13,6 +13,15 @@ html {
     
 }
 
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100;
+    }
+}
+
 body {
     /* font-family: Helvetica; */
     text-align: center;
@@ -210,6 +219,12 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+}
+
+#about-section h1, h3, h4{
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 @media only screen and (max-width: 600px) {
